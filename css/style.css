@@ -1,11 +1,11 @@
 .header-container {
-    border: 1px solid;
+    /* border: 1px solid; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 16px;
     padding-right: 16px;
-    background-color: aquamarine;
+    background-color: #00ffff;
 }
 
 hr {
@@ -16,8 +16,98 @@ hr {
     width: 40px;
     height: 40px;
     border: 1px solid;
+    border-radius: 50%;
+    background-image: url('../assets/hxh.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav-container>button {
     height: 25px;
+    border-radius: 10px;
+}
+
+.section-container {
+    padding-top: 48px;
+    padding-bottom: 24px;
+}
+
+.section-container>header {
+    text-align: center;
+}
+
+.section-content-container {
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.section-content-container>div {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+label {
+    float: left;
+    margin-left: 10px;
+}
+
+.input {
+    height: 24px;
+    width: 98%;
+    border: 1px solid aqua;
+    border-radius: 16px;
+    margin: 5px auto;
+    margin-bottom: 1rem;
+}
+
+
+.tombol {
+    display: grid;
+    place-items: center;
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.custom {
+    display: inline-block;
+    background: #4285F4;
+    color: #fff;
+    width: 160px;
+    height: 30px;
+    border-radius: 10px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Roboto', sans-serif;
+    margin: 2rem 0;
+}
+
+.custom:hover {
+    background: gold;
+}
+
+.custom-select {
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+}
+
+option {
+    width:max-content;
+    font-family:Arial, Helvetica, sans-serif
+    
 }
