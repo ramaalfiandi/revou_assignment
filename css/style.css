@@ -34,8 +34,7 @@ hr {
 }
 
 .section-container {
-    font-family: Arial, Helvetica, sans-serif
-    padding-top: 48px;
+    font-family: Arial, Helvetica, sans-serif padding-top: 48px;
     padding-bottom: 24px;
 }
 
@@ -106,36 +105,108 @@ label {
 .custom-select {
     position: relative;
     display: inline-block;
-  }
-  
-  .custom-select select {
+}
+
+.custom-select select {
     display: inline-block;
-  }
-  
-  .custom-select:after {
+}
+
+.custom-select:after {
     position: absolute;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
     pointer-events: none;
-  }
-  
-  .custom-select select {
+}
+
+.custom-select select {
     background-color: transparent;
     border: 1px solid #ccc;
     padding: 8px;
     font-size: 16px;
-  }
-  
-  .custom-select select:focus {
+}
+
+.custom-select select:focus {
     outline: none;
-  }
-  
-  .custom-select select option {
+}
+
+.custom-select select option {
     padding: 8px;
+}
+
+.custom-select select option:hover {
+    background-color: #f4f4f4;
+}
+
+.banner-container {
+    height: 500px;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: antiquewhite;
+}
+
+.banner-slide {
+    display:flex;
+    position:x relative;
+}
+
+.banner-slide img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 100;
   }
   
-  .custom-select select option:hover {
-    background-color: #f4f4f4;
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+  .review-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .review {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .customer-photo {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .customer-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  .customer-info h3 {
+    margin-top: 0;
+  }
+  
+  .customer-info p {
+    margin-bottom: 0;
   }
   
