@@ -50,13 +50,23 @@ hr {
 
 .section-content-container>div {
     text-align: center;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
     text-align: center;
 }
+
+h4 {
+    text-align: left;
+}
+
+h5 {
+    text-align: left;
+    margin-left: 30px;
+}
+
 
 p {
     text-align: center;
@@ -104,7 +114,7 @@ label {
 
 .custom-select {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
 }
 
 .custom-select select {
@@ -139,25 +149,27 @@ label {
 }
 
 .banner-container {
-    height: 500px;
+    height: auto;
     position: relative;
     max-width: 100%;
     overflow: hidden;
     background-color: antiquewhite;
+    padding-bottom: 10px;
 }
 
 .banner-slide {
-    display:flex;
-    position:x relative;
+    display: flex;
+    position: x relative;
 }
 
 .banner-slide img {
     width: 100%;
-    height: auto;
+    height: 300px;
     transition: transform 0.5s ease;
 }
 
-.prev, .next {
+.prev,
+.next {
     position: absolute;
     top: 50%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -166,47 +178,90 @@ label {
     cursor: pointer;
     padding: 10px;
     z-index: 100;
-  }
-  
-  .prev {
-    left: 0;
-  }
-  
-  .next {
-    right: 0;
-  }
+}
 
-  .review-container {
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.review-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: left;
     flex-direction: column;
-  }
-  
-  .review {
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  .customer-photo {
-    width: 100px;
-    height: 100px;
+}
+
+.review {
+    max-width: 800px;
+    /* Lebar maksimum kontainer */
+    margin: 0 auto;
+    /* Pusatkan kontainer */
+    padding: 0 20px;
+    /* Padding di sisi */
+    justify-content: start;
+}
+
+.customer-photo {
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .customer-photo img {
-    width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.customer-photo img {
+    max-width: 100%;
     height: auto;
-    border-radius: 50%;
-  }
-  
-  .customer-info h3 {
-    margin-top: 0;
-  }
-  
-  .customer-info p {
-    margin-bottom: 0;
-  }
-  
+    /* border-radius: 50%; */
+}
+
+.customer-info h3 {
+    /* position:relative;
+    padding-top: 0px;
+    text-align: left; */
+    /* flex: 1; */
+    display: flex;
+    margin-top: 10px;
+}
+
+.customer-info h4 {
+    /* position:relative;
+    padding-top: 0px;
+    text-align: left; */
+    display: flex;
+    margin-top: 10px;
+}
+
+.customer-info p {
+    /* position: relative; */
+    /* padding-top: 0px; */
+    /* text-align: left;
+    padding: auto; */
+    display: flex;
+    margin-top: 10px;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 0 10px;
+        /* Padding lebih sedikit untuk layar kecil */
+    }
+
+    .section-content-content-container {
+        display: flex;
+        /* padding-left: 10px;
+        margin-left: 15px;
+        margin-right: 15px; */
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .section-content-content-container>div {
+        text-align: center;
+    }
