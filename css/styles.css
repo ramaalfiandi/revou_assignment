@@ -202,7 +202,6 @@ label {
     /* Pusatkan kontainer */
     padding: 0 20px;
     /* Padding di sisi */
-    justify-content: start;
 }
 
 .customer-photo {
@@ -247,21 +246,31 @@ label {
     text-align: left;
 }
 
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 0 10px;
-        /* Padding lebih sedikit untuk layar kecil */
-    }
-
-    .section-content-content-container {
+    .numbered-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .numbered-list li {
         display: flex;
-        /* padding-left: 10px;
-        margin-left: 15px;
-        margin-right: 15px; */
-        justify-content: center;
-        padding-bottom: 10px;
-    }
-
-    .section-content-content-container>div {
+        margin-bottom: 10px;
+      }
+      
+      .circle {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #007bff;
+        color: #fff;
         text-align: center;
-    }
+        line-height: 50px;
+        margin-right: 10px;
+      }
+      
+      .point {
+        flex: 1;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      
+ 
