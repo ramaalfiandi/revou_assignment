@@ -1,22 +1,18 @@
-document.addEventListener("DOMContentLoaded", function() {
-    let slideIndex = 0;
-    showSlides();
-  
-    function showSlides() {
-        let i;
-        let slides = document.getElementsByClassName("banner-slide");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change image every 5 seconds
-      }
+var slideIndex = 1;
+showDivs(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-  });
-  
+function showDivs(n) {
+  var i;
+  var imgslide = document.getElementsByClassName("img-slidebanner");
+  if (n > imgslide.length) slideIndex = 1;
+  if (n < 1) slideIndex = imgslide.length;
+
+  for (i = 0; i < imgslide.length; i++) {
+    imgslide[i].style.display = "none";
+  }
+  imgslide[slideIndex - 1].style.display = "block";
+}

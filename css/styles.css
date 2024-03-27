@@ -162,7 +162,7 @@ label {
     position: x relative;
 }
 
-.banner-slide img {
+.img-slidebanner {
     width: 100%;
     height: 300px;
     transition: transform 0.5s ease;
@@ -254,6 +254,8 @@ label {
       .numbered-list li {
         display: flex;
         margin-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
       }
       
       .circle {
