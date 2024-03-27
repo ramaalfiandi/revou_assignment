@@ -16,3 +16,27 @@ function showDivs(n) {
   }
   imgslide[slideIndex - 1].style.display = "block";
 }
+
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var subject = document.getElementById("subject").value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (name.trim() == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+
+  if (subject == "") {
+    alert("Please choose a subject");
+    return false;
+  }
+
+  return true;
+}

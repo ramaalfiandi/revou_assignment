@@ -65,15 +65,16 @@
 
     <!-- Konten Form -->
     <div style="height: 550px; width: 100%; background-color: aliceblue;">
+        <form id="contact-form" onsubmit="return validateForm()">
         <h1>Contact Us</h1>
         <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
-        <label>Your Name</label><br />
-        <input class="input" type="text" placeholder="First and last name"> <br />
-        <label>Email Address</label><br />
-        <input class="input" type="text" placeholder="example@email.com"> <br />
-        <label for="options">What are you interested in?</label>
+        <label for="name">Your Name</label><br />
+        <input class="input" type="text" id="name" name="name" placeholder="First and last name"> <br />
+        <label for="email">Email Address</label><br />
+        <input class="input" type="email" id="email" name="email" placeholder="example@email.com"> <br />
+        <label for="subject">What are you interested in?</label>
         <div class="custom-select">
-            <select name="options" id="options">
+            <select name="subject" id="subject">
                 <option value="" disabled selected>Select option</option>
                 <option value="travel">Travelling</option>
                 <option value="exercise">Exsecising</option>
@@ -81,8 +82,9 @@
             </select>
         </div>
         <div class="tombol">
-            <button name="button" class="custom">SEND</button>
+            <button name="button" class="custom" type="submit">SEND</button>
         </div>
+        </form>
     </div>
 
 </div>
