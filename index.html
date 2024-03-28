@@ -5,12 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-Rama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-</body>
 <header class="header-container">
     <section class="logo-icon"></section>
     <section class="nav-container">
@@ -31,7 +34,7 @@
 
 <!-- Isi Konten Bagian 1-->
 <div class="section-content-container">
-    <div style="height: 550px; width: 100%; background-color: antiquewhite;">
+    <div style="height: 550px; width: 100%; background-color: #f2f2f2;">
         <!-- Konten Auto Slide Banner -->
         <div class="banner-container">
             <div>
@@ -40,11 +43,7 @@
                 <img class="img-slidebanner" src="assets/santiagobernabeu.jpg" alt="Image 3">
             </div>
             <button class="btnprev" onclick="plusDivs(-1)">Previous</a>
-            <button class="btnnext" onclick="plusDivs(1)">Next</a>
-
-                    <!-- Tombol Panah Slide Image-->
-                    <!-- <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
-            <button class="next" onclick="plusSlides(1)">&#10095;</button> -->
+                <button class="btnnext" onclick="plusDivs(1)">Next</a>
         </div>
         <div class="review-container">
             <div class="review">
@@ -64,26 +63,26 @@
 
 
     <!-- Konten Form -->
-    <div style="height: 550px; width: 100%; background-color: aliceblue;">
+    <div style="height: 550px; width: 100%; background-color: #f2f2f2;">
         <form id="contact-form" onsubmit="return validateForm()">
-        <h1>Contact Us</h1>
-        <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
-        <label for="name">Your Name</label><br />
-        <input class="input" type="text" id="name" name="name" placeholder="First and last name"> <br />
-        <label for="email">Email Address</label><br />
-        <input class="input" type="email" id="email" name="email" placeholder="example@email.com"> <br />
-        <label for="subject">What are you interested in?</label>
-        <div class="custom-select">
-            <select name="subject" id="subject">
-                <option value="" disabled selected>Select option</option>
-                <option value="travel">Travelling</option>
-                <option value="exercise">Exsecising</option>
-                <option value="reading">Reading a Book</option>
-            </select>
-        </div>
-        <div class="tombol">
-            <button name="button" class="custom" type="submit">SEND</button>
-        </div>
+            <h1>Contact Us</h1>
+            <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima</p>
+            <label for="name">Your Name</label><br />
+            <input class="input" type="text" id="name" name="name" placeholder="First and last name"> <br />
+            <label for="email">Email Address</label><br />
+            <input class="input" type="email" id="email" name="email" placeholder="example@email.com"> <br />
+            <label for="subject">What are you interested in?</label>
+            <div class="custom-select">
+                <select name="subject" id="subject">
+                    <option value="" disabled selected>Select option</option>
+                    <option value="travel">Travelling</option>
+                    <option value="exercise">Exsecising</option>
+                    <option value="reading">Reading a Book</option>
+                </select>
+            </div>
+            <div class="tombol">
+                <button name="button" class="custom" type="submit">SEND</button>
+            </div>
         </form>
     </div>
 
@@ -91,7 +90,7 @@
 
 <!-- Konten Tata Cara Order -->
 
-<div style="height: auto; width: 100%; background-color:antiquewhite;">
+<div style="height: auto; width: 100%; background-color:#f2f2f2;">
     <h1>Berikut ini tata cara pemesanan para Travel Agent Rama</h1>
     <ul class="numbered-list">
         <li>
@@ -142,12 +141,80 @@
 
 
 <div>
-    <div style="height: 100px; width: 100%; background-color: transparent;">
+    <div class="closing">
         <h1>Our Package</h1>
     </div>
 
 </div>
 
+<div class="travel-container">
+    <div class="row">
+        <div class="column">
+            <div class="section">
+                <img class="travel" src="assets/travel-bag.png" alt="Travel Icon" style="height: 40px; width: 40px;">
+                <h2>New York</h2>
+                <p>The city that never sleeps!</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="section">
+                <img class="travel" src="assets/travel-bag.png" alt="Travel Icon" style="height: 40px; width: 40px;">
+                <h2>Paris</h2>
+                <p>The city of love and lights!</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="section">
+                <img class="travel" src="assets/travel-bag.png" alt="Travel Icon" style="height: 40px; width: 40px;">
+                <h2>Tokyo</h2>
+                <p>The bustling metropolis of Japan!</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="section">
+                <img class="travel" src="assets/travel-bag.png" alt="Travel Icon" style="height: 40px; width: 40px;">
+                <h2>Rome</h2>
+                <p>The eternal city!</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="section">
+                <img class="travel" src="assets/travel-bag.png" alt="Travel Icon" style="height: 40px; width: 40px;">
+                <h2>London</h2>
+                <p>The home of the royal</p>
+            </div>
+        </div>
+        <div class="column">
+            <div class="section">
+                <img class="travel" src="assets/travel-bag.png" alt="Travel Icon" style="height: 40px; width: 40px;">
+                <h2>Sydney</h2>
+                <p>The harbor city!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="closing">
+        <h1>Melintasi Batas: Memahami Esensi Bisnis Perjalanan</h1>
+        <p>Traveling bukan hanya tentang destinasi yang kita tuju, tetapi tentang perjalanan itu sendiri.
+            Ia adalah cerita tentang pengalaman, kegembiraan, dan pertumbuhan pribadi.
+            Dan di dalam cerita ini, setiap perusahaan perjalanan memiliki peran yang tak tergantikan dalam menyusun
+            lembaran sejarah hidup kita.</p>
+        <button name="button" class="custom-button">CALL TO ACTION</button>
+    </div>
+</div>
+
+<div>
+    <div class="footer">
+        <p>&copy; 2024 Rama Alfiandi - Assignment Revou</p>
+    </div>
+
+</div>
+
+</body>
 
 
 </html>
